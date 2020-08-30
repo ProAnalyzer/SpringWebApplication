@@ -1,0 +1,33 @@
+Database RsEmpDB in a server which has below specifications 
+Driver Class Name "org.postgresql.Driver"
+Url : "jdbc:postgresql://127.0.0.1:5432/RsEmpDB"
+user_name : postgres
+password : postgres
+
+In the Database RsEmpDB I created a schema "EmpSchema".
+
+I'm using postgresql portable server and pgAdmin4 workbench.
+
+
+
+
+Script for Creating The Table
+
+CREATE TABLE "EmpSchema"."EmpTable"
+            (empId SERIAL PRIMARY KEY ,
+         firstName VARCHAR(20) NOT NULL,
+         middleName VARCHAR(20) NULL,
+         lastName VARCHAR(20) NOT NULL,
+	     gender VARCHAR(10) NOT NULL,
+	     dob DATE NULL,
+         age INT NULL,
+         startDate DATE NULL,
+         salary FLOAT NULL,
+	     city VARCHAR(20) NULL,
+	     phone BIGINT NULL,
+	     address VARCHAR(80) NULL,
+         email VARCHAR(30) NULL,
+         jobProfile VARCHAR(20) NULL, 
+  	     userName VARCHAR(20) NOT NULL,
+	     password VARCHAR(30) NOT NULL,
+		 confirmPassword VARCHAR(30) NOT NULL)
